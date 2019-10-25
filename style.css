@@ -16,6 +16,17 @@ a:hover.line{
 div>a{
     color: #0077C5;
 }
+.button{
+    width: 100%;
+    background: #0077c5;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid #4c4c4c;
+    border-radius: 4px;
+}
+.button>i{
+    margin-right: 5px;
+}
 header .user-options{
     display: flex;
     position: absolute;
@@ -34,19 +45,10 @@ header .user-options{
     color: #605b63;
     padding-bottom: 5px;
 }
-.user-options .button{
-    width: 100%;
-    background: #0077c5;
-    color: #ffffff;
+.user-options .button{    
     font-size: 13.5px;
     flex-basis: 40%;
-    text-align: center;
-    padding: 0.5em 0;
-    border: 1px solid #4c4c4c;
-    border-radius: 4px;
-}
-.user-options .button i{
-    margin-right: 1em;
+    padding: 0.5em 0;    
 }
 main{
     width: 100vw;
@@ -59,6 +61,13 @@ form{
     padding: 2em;
     grid-column-start: 3;
     background: #ffffff;
+}
+form>button{
+    height: 44px;
+    font-weight: 400;
+    padding: 6px 12px;
+    font-size: 1.125em;
+    margin-top: 30px;
 }
 form>span{
     padding: 5px 0;
