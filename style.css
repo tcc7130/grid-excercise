@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+}
+.user-options{
+    display: flex;
+    position: absolute;
+    width: 21%;
+    right: 48px;
+    top: 0;
+    padding: 27px;
+}
+.user-options .text{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    flex-basis: 70%;
+}
+.user-options .button{
+    width: 100%;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    flex-basis: 40%;
+    text-align: center;
+    padding: 5px 0;
+}
+.user-options .button i{
+    margin-right: 1em;
+}
