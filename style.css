@@ -1,8 +1,8 @@
 body{
     background: #eceef1;
+    color: #4C4C4C;
     font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
-    color: #4C4C4C;
 }
 header{
     width: 100%;
@@ -10,30 +10,33 @@ header{
 a:link{
     text-decoration: none;
 }
-a:hover.line{
+a:hover{
     text-decoration: underline;
+}
+.no-line{
+    text-decoration: none !important;
 }
 div>a{
     color: #0077C5;
 }
 .button{
-    width: 100%;
     background: #0077c5;
-    color: #ffffff;
-    text-align: center;
     border: 1px solid #4c4c4c;
     border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
 }
 .button>i{
     margin-right: 5px;
 }
 header .user-options{
     display: flex;
+    padding: 20px;
     position: absolute;
-    width: 16%;
     right: 30px;
     top: 0;
-    padding: 20px;
+    width: 16%;
 }
 .user-options .text{
     display: flex;
@@ -46,42 +49,42 @@ header .user-options{
     padding-bottom: 5px;
 }
 .user-options .button{    
-    font-size: 13.5px;
     flex-basis: 40%;
+    font-size: 13.5px;
     padding: 0.5em 0;    
 }
 main{
-    width: 100vw;
-    height: 80vh;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 9fr 1fr;
+    height: 80vh;
+    width: 100vw;
 }
 form{
-    padding: 2em;
-    grid-column-start: 3;
     background: #ffffff;
+    grid-column-start: 3;
+    padding: 2em;
 }
 form>button{
-    height: 44px;
-    font-weight: 400;
-    padding: 6px 12px;
     font-size: 1.125em;
+    font-weight: 400;
+    height: 44px;
     margin-top: 30px;
+    padding: 6px 12px;
 }
 form>span{
-    padding: 5px 0;
-    font-size: 10px;
     color: #444;
+    font-size: 10px;
+    padding: 5px 0;
 }
 form .head{
-    text-align: center;
     padding-bottom: 20px;
+    text-align: center;
 }
-.head>h1{
-    margin: 0;
+h1{
     font-size: 24px;
     font-weight: 400;
+    margin: 0;
     margin-bottom: 1em;
 }
 .head>span{
@@ -99,11 +102,11 @@ label{
     padding-bottom: 6px;
 }
 input:not([type="submit"]){
-    height: 34px;
-    width: 96%;
-    color: #000;
     border: 1px solid #C1C5C8;
-    padding: 0 2%;
     border-radius: 3px;
+    color: #000;
     font-size: 16.8px;    
+    height: 34px;
+    padding: 0 2%;
+    width: 96%;
 }
