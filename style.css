@@ -4,9 +4,6 @@ body{
     font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
-header{
-    width: 100%;
-}
 a:link{
     text-decoration: none;
 }
@@ -27,86 +24,125 @@ div>a{
     text-align: center;
     width: 100%;
 }
-.button>i{
-    margin-right: 5px;
+    .button>i{
+        margin-right: 5px;
+    }
+header{
+    width: 100%;
 }
-header .user-options{
-    display: flex;
-    padding: 20px;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    width: 16%;
-}
-.user-options .text{
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    flex-basis: 70%;
-}
-.user-options span{
-    color: #605b63;
-    padding-bottom: 5px;
-}
-.user-options .button{    
-    flex-basis: 40%;
-    font-size: 13.5px;
-    padding: 0.5em 0;    
-}
+    header .logo-section{
+        text-align: center;
+        margin-left: 70px;
+        margin-top: 60px;
+    }
+    .logo-section>a>img{
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    .logo-section>div>a>img{
+        height: 23px;
+        margin-bottom: 20px;
+    }
 main{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 318px 1fr;
     grid-template-rows: 9fr 1fr;
     height: 80vh;
     width: 100vw;
 }
-form{
+form, .captcha{
     background: #ffffff;
-    grid-column-start: 3;
-    padding: 2em;
+    border: 1px solid #c7c7c7;
+    border-bottom: none;
+    border-radius: 2px;
+    grid-column-start: 2;
+    padding: 30px;
+    width: 100%;
 }
-form>button{
-    font-size: 1.125em;
+    h1{
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    form>button{
+        font-size: 1.125em;
+        font-weight: 400;
+        height: 44px;
+        padding: 6px 12px;
+    }
+    form>span{
+        color: #444;
+        font-size: 10px;
+        padding: 5px 0;
+    }
+    form .head{
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .head>span{
+        display: block;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .head>a{
+        display: inherit;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    label{
+        display: block;
+        padding-bottom: 6px;
+    }
+    input[type="tel"]{
+        margin-bottom: 0 !important;
+    }
+    input[type="tel"] + span{
+        display: block;
+        margin-bottom: 30px;
+    }
+    input:not([type="submit"]){
+        border: 1px solid #C1C5C8;
+        border-radius: 3px;
+        color: #000;
+        font-size: 16.8px;    
+        height: 34px;
+        margin-bottom: 30px;
+        padding: 0 2%;
+        width: 96%;
+    }
+    .terms{
+        color: #757575;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        margin-top: 30px;
+        line-height: 2;
+        text-align: center;
+    }
+    .captcha{
+        background: #ECEEF1;
+        border-bottom: 1px solid #c7c7c7;
+        border-top: none;
+        color: #8d9096;
+        font-size: 10px;
+        font-weight: 400;
+        grid-row-start: 2;
+        padding: 16px 30px;
+    }
+footer{
+    color: #505050;
     font-weight: 400;
-    height: 44px;
-    margin-top: 30px;
-    padding: 6px 12px;
-}
-form>span{
-    color: #444;
-    font-size: 10px;
-    padding: 5px 0;
-}
-form .head{
-    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: 52px;
+    margin-top: 45px;
     text-align: center;
 }
-h1{
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-    margin-bottom: 1em;
-}
-.head>span{
-    display: block;
-    font-size: 14px;
-    font-weight: 300;
-}
-.head>a{
-    display: inherit;
-    font-size: 12px;
-    font-weight: 300;
-}
-label{
-    display: block;
-    padding-bottom: 6px;
-}
-input:not([type="submit"]){
-    border: 1px solid #C1C5C8;
-    border-radius: 3px;
-    color: #000;
-    font-size: 16.8px;    
-    height: 34px;
-    padding: 0 2%;
-    width: 96%;
-}
+    footer>span{
+        display: block;
+    }
+    footer>span>a{
+        color: #505050;
+        padding-left: 10px;
+    }
